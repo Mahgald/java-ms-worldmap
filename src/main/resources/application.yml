@@ -1,7 +1,13 @@
 spring:
   application:
-    name: java-ms-worldmap
+    name: "@project.artifactId@"
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://java-springcloudconfig-server.herokuapp.com/eureka/
+      defaultZone: http://localhost:9000/eureka/
+      
+info:
+  name: "@project.artifactId@"
+  version: "@project.version@"
+  description: "@project.description@"
+  running-profile: ${spring.profiles.active}
